@@ -8,13 +8,13 @@
 
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=openwrt-ssr
-PKG_VERSION:=1.2.1
+PKG_NAME:=shadowsocksR-libev
+PKG_VERSION:=3.3.0
 #PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://github.com/shadowsocks/shadowsocks-libev
-PKG_SOURCE_VERSION:=91222766e793a6d1516ac066984b63069594e0bf
+PKG_SOURCE_URL:=https://github.com/shadowsocks/shadowsocks-libev.git
+PKG_SOURCE_VERSION:=ffad914dddb671c378e3060954d6d9fd6d492755
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
@@ -38,7 +38,7 @@ define Package/openwrt-ssr/Default
 	CATEGORY:=LuCI
 	SUBMENU:=3. Applications
 	TITLE:=shadowsocksR-libev LuCI interface
-	URL:=https://github.com/liuxiansan/openwrt-ssr
+	URL:=https://github.com/shadowsocks/shadowsocks-libev
 	VARIANT:=$(1)
 	DEPENDS:=$(3)	
 	PKGARCH:=all
