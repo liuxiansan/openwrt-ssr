@@ -13,8 +13,8 @@ PKG_VERSION:=1.2.1
 #PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://github.com/liuxiansan/openwrt-ssr
-PKG_SOURCE_VERSION:=ff2b3a259e957965a3d73e0cb0ef02c9eda7b97e
+PKG_SOURCE_URL:=https://github.com/shadowsocks/shadowsocks-libev
+PKG_SOURCE_VERSION:=91222766e793a6d1516ac066984b63069594e0bf
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
